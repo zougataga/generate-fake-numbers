@@ -17,7 +17,7 @@ app.get("/meteo/:p", async (req, res) => {meteo(req,res)})
 app.get("/local/:loc", async (req, res) => { res.send(await search(req.params.loc)) });
 app.get("/local", async (req, res) => {
     let ip = req.headers['cf-connecting-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress
-    let r = await auto("88.126.100.145")
+    let r = await auto(ip)
     res.send(r);
 });
 app.all('*', (req, res) => {meteo(req,res)});
