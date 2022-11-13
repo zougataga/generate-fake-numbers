@@ -5,5 +5,7 @@
   <h3>BOT AUTOSHOP | TELEGRAM</h3>
   <p>
    <a href="https://discord.gg/ctp">Discord</a>
-  </p>
+  </p> 
+  <p>Example:</p>
+  <img src="https://cdn.discordapp.com/attachments/1041110595098919033/1041273189717786654/image.png">
 </div>
