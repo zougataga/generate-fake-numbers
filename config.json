@@ -1,0 +1,24 @@
+{
+    "token": "",
+    "logs": "-716156365",
+    "domain": "http:/localhost",
+    "shop": [
+        {
+            "name": "CC",
+            "emoji": "💳",
+            "price": 15
+        },
+        {
+            "name": "Boite rez",
+            "emoji": "📦",
+            "price": 100
+        }
+    ],
+    "coinbase": {
+        "apikey": ""
+    },
+    "credits": {
+        "author": "@llx404",
+        "authoshopcanal": "@bot"
+    }
+}

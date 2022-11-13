@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Accepted</title>
+    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css rel=stylesheet
+        crossorigin=anonymous>
+    <meta content=website property=og:type>
+    <link href=https://use.typekit.net/joc7wli.css rel=stylesheet>/>
+    <style>
+        .btn {
+            background-color: #60d1f6;
+            color: #fff;
+            padding: 10px 22px
+        }
+
+        .btn:hover {
+            background: #0076ff;
+            color: #fff
+        }
+
+        body {
+            background-size: 20%;
+            background-repeat: no-repeat;
+            background-position: bottom 0 right 7px;
+            background: #3c4359 !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #000
+        }
+
+        p,
+        small,
+        span {
+            color: #000
+        }
+
+        #box {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 2px solid #181a1f;
+            vertical-align: middle;
+            border-radius: 25px;
+            text-align: center;
+            padding: 60px;
+            background-color: #ffffff !important;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #box:hover {
+            transform: scale(1.2);
+        }
+
+
+        #server_pic {
+            display: block;
+            border-radius: 1%;
+            margin: 10px auto;
+            width: 200px;
+            border: 0 solid #181a1f
+        }
+
+        hr {
+            margin: 20px;
+            background-color: #eaeaea
+        }
+    </style>
+</head>
+
+<body>
+    <div id=box>
+        <img id=server_pic src=https://res.cloudinary.com/commerce/image/upload/v1659223627/pcayit0hxvs9kd7wqmtm.png>
+        <%- code %>
+    </div>
+</body>
+
+</html>
