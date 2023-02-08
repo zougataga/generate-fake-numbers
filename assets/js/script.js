@@ -3,6 +3,7 @@ const
     allCheck = document.querySelectorAll(`[id*=checkbox]`),
     go = document.querySelector("#go"),
     result = document.querySelector("#result"),
+    titre = result.querySelector("h2"),
     text = result.querySelector("textarea"),
     stopBtn = result.querySelector("#stop"),
     downloadBtn = result.querySelector("#download"),
@@ -21,6 +22,7 @@ go.addEventListener("click", () => {
     if (pays.length == 0) alert("Merci de choisir un ou des pays !");
     else {
         result.style.display = "block";
+        titre.innerHTML = `Résultat`;
         let
             i = 0,
             randomPays = (min = 0, max = pays.length - 1) => { return pays[Math.floor(Math.random() * (max - min + 1)) + min] };
@@ -30,6 +32,7 @@ go.addEventListener("click", () => {
                 if (generateur) clearInterval(generateur);
                 return
             } else {
+                titre.innerHTML = `Résultat [${i}/${n}]`
                 text.value += `${genNum(randomPays())}\n`;
                 text.scrollTop = text.scrollHeight
                 i++
