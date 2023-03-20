@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "colors": "^1.4.0",
-    "fs": "^0.0.1-security",
-    "generate-fake-numbers": "^1.0.1",
-    "readline-sync": "^1.4.10"
-  }
-}
