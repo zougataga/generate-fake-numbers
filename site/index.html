@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GenNumNoVerif</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2>Générateur</h2>
+    <h1>De numéro (no verif)</h1>
+    <!-- <div style="display: flex;justify-content: space-around;"> -->
+    <h2 for="num">Nombre de numéro a générer: (0 = Infinie)</h2>
+    <div style="margin:10px auto;display: flex;justify-content: center;">
+        <div class="input-number-wrapper">
+            <button class="decrease"><i class="fa fa-minus"></i></button>
+            <input id="num" type="text" value="0" />
+            <button class="increase"><i class="fa fa-plus"></i></button>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="ks-cboxtags">
+            <li>
+                <input type="checkbox" id="checkboxOne" value="France" checked>
+                <label for="checkboxOne">France</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxTwo" value="Qatar">
+                <label for="checkboxTwo">Qatar</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxThree" value="Belgique">
+                <label for="checkboxThree">Belgique</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxFour" value="Suisse">
+                <label for="checkboxFour">Suisse</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxFive" value="Royaume Uni">
+                <label for="checkboxFive">Royaume Uni</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxSix" value="Pays Bas">
+                <label for="checkboxSix">Pays Bas</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxSeven" value="Allemagne">
+                <label for="checkboxSeven">Allemagne</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxEight" value="Espagne">
+                <label for="checkboxEight">Espagne</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkboxNine" value="Portugal">
+                <label for="checkboxNine">Portugal</label>
+            </li>
+        </ul>
+    </div>
+    <button id="go" class="btn">GO</button>
+    
+    <div id="result">
+        <h2>Résultat:</h2>
+        <textarea readonly cols="30" rows="10"></textarea>
+        <div style="margin-top: 5px;"></div>
+        <button id="stop" class="btn">STOP</button>
+        <button id="download" class="btn">DONWLOAD</button>
+        <button id="clear" class="btn">CLEAR</button>
+    </div>
+    <script src="./assets/js/generateFakeNumbers.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
