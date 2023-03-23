@@ -52,7 +52,7 @@ go.addEventListener("click", () => {
 });
 
 stopBtn.addEventListener("click", () => {
-    if (generateur) clearInterval(generateur);
+    if (generateur) generateur.stop();
 });
 clearBtn.addEventListener("click", () => text.value = ``);
 downloadBtn.addEventListener("click", () => {
